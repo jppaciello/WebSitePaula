@@ -17,7 +17,6 @@
 
 - **HTML5** – Estrutura semântica do site  
 - **CSS3 (Flexbox & Grid)** – Design responsivo e estilização avançada  
-- **JavaScript (ES6+)** – Interatividade e funcionalidades dinâmicas  
 - **Bootstrap** – Componentes modernos e responsividade  
 - **FontAwesome** – Ícones visuais elegantes  
 - **Google Fonts** – Tipografia sofisticada  
