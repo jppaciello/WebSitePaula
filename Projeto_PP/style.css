@@ -6,6 +6,80 @@
     font-family: 'Playfair Display', serif;
 }
 
+/* Estilos para o modo claro */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header, section {
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #0000EE;
+}
+
+/* Estilos para o modo noturno */
+body.night-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.night-mode header{
+    background-color:#1e1e1e;
+} 
+
+body.night-mode section.hero{
+    background-color: #1e1e1e;
+}
+
+body.night-mode section#colecao {
+    background-color: #1e1e1e;
+}
+
+body.night-mode section#sobre {
+    background-color: #1e1e1e;
+}
+
+body.night-mode section#contato {
+    background-color: #1e1e1e;
+}
+
+body.night-mode a {
+    color: #fbfcfd;
+}
+
+/* Estilos para os botões de navegação do carrossel */
+button.carousel-btn {
+    background-color: #ddd;
+    color: #000;
+}
+
+body.night-mode button.carousel-btn {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Botão de troca de modo */
+#toggle-mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body.night-mode #toggle-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+
 body {
     background-color: #f8f4fc;
     color: #333;
@@ -121,6 +195,53 @@ nav a:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* carrosel de imagens */
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; 
+    max-height: auto;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
 
 /* 📌 Responsividade para telas menores */
 @media screen and (max-width: 768px) {

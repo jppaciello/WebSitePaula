@@ -6,13 +6,16 @@
     <title>Paula Paciello Semi Joias</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="./assets/Logotipo Paula Paciello Semijoias.png">
+    <link rel="icon" href="./imgs/Logotipo Paula Paciello Semijoias.png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Paula Paciello Semi Joias</h1>
     </header>
+
+    <!-- Botão para alternar o modo -->
+    <button id="toggle-mode">Modo Noturno</button>
     
     <section class="hero">
         <h2>Brilhe com Elegância</h2>
@@ -23,14 +26,20 @@
     <section id="colecao">
         <h2>Nossa Coleção</h2>
         <p>Confira nossas peças cuidadosamente selecionadas para você.</p>
-        <div class="galeria">
-            <img src="./assets/semijoia1.jpeg" alt="Semi joia 1">
-            <img src="./assets/semijoia2.jpeg" alt="Semi joia 2">
-            <img src="./assets/semijoia3.jpeg" alt="Semi joia 3">
-            <img src="./assets/semijoia4.jpeg" alt="Semi joia 4">
-            <img src="./assets/semijoia5.jpeg" alt="Semi joia 5">
+        <br>
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn">&#9664;</button>
+            <div class="carousel">
+                <img src="./imgs/semijoia1.jpeg" alt="Semi joia 1">
+                <img src="./imgs/semijoia2.jpeg" alt="Semi joia 2">
+                <img src="./imgs/semijoia3.jpeg" alt="Semi joia 3">
+                <img src="./imgs/semijoia4.jpeg" alt="Semi joia 4">
+                <img src="./imgs/semijoia5.jpeg" alt="Semi joia 5">
+            </div>
+            <button class="carousel-btn next-btn">&#9654;</button>
         </div>
     </section>
+    
     
     <section id="sobre">
         <h2>Sobre Nós</h2>
